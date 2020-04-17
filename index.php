@@ -8,6 +8,9 @@ error_reporting(E_ALL);
    URl:
    Pair Program 2
 */
+
+include("functions.php");
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -27,15 +30,10 @@ echo "PHP Array Practice<br><br>";
 echo "Step 2 <br><br>";
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
-function printArr($array) {
-
-    foreach($array as $i) {
-        echo "$i <br>";
-    }
-}
-
 printArr($numbers);
 
+echo "<br>Step 3 <br><br> moved function to new function.php file";
+echo " included function.php to this file";
 ?>
 
 </body>
