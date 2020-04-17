@@ -22,7 +22,19 @@ error_reporting(E_ALL);
 <h1>Pair Program 2</h1>
 <?php
 
-echo "PHP Array Practice";
+echo "PHP Array Practice<br><br>";
+
+echo "Step 2 <br><br>";
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
+
+function printArr($array) {
+
+    foreach($array as $i) {
+        echo "$i <br>";
+    }
+}
+
+printArr($numbers);
 
 ?>
 
