@@ -26,4 +26,21 @@ function removeDups($array) {
 
     return $newArray;
 }
+
+function distribution($array) {
+    sort($array);
+    $count = 0;
+    $distribute = array();
+    foreach($array as $i) {
+        foreach($array as $j) {
+            if($i == $j) {
+                $count++;
+            }
+        }
+        $distribute[$i] = $count;
+        $count = 0;
+    }
+
+    return $distribute;
+}
 ?>

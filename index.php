@@ -36,11 +36,20 @@ echo "<br>Step 3 <br> moved function to new function.php file";
 echo " included function.php to this file<br><br>";
 echo "Step 4 <br>";
 echo "the largest number in the array is: ".largest($numbers)."<br><br>";
+
 echo "Step 5 <br>";
 $newArray = removeDups($numbers);
 echo "the array without duplicates: ";
 foreach($newArray as $i) {
     echo "$i ";
+}
+echo "<br><br>";
+
+echo "Step 6 <br>";
+$distribute = distribution($numbers);
+echo "the distributed array: ";
+foreach($distribute as $i => $count) {
+    echo "$i => $count, ";
 }
 echo "<br><br>";
 ?>
