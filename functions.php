@@ -21,4 +21,9 @@ function largest($array) {
     return $largest;
 }
 
+function removeDups($array) {
+    $newArray = array_unique($array);
+
+    return $newArray;
+}
 ?>

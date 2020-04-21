@@ -35,8 +35,14 @@ printArr($numbers);
 echo "<br>Step 3 <br> moved function to new function.php file";
 echo " included function.php to this file<br><br>";
 echo "Step 4 <br>";
-echo "the largest number in the array is: ".largest($numbers);
-
+echo "the largest number in the array is: ".largest($numbers)."<br><br>";
+echo "Step 5 <br>";
+$newArray = removeDups($numbers);
+echo "the array without duplicates: ";
+foreach($newArray as $i) {
+    echo "$i ";
+}
+echo "<br><br>";
 ?>
 
 </body>
