@@ -32,8 +32,11 @@ $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
 printArr($numbers);
 
-echo "<br>Step 3 <br><br> moved function to new function.php file";
-echo " included function.php to this file";
+echo "<br>Step 3 <br> moved function to new function.php file";
+echo " included function.php to this file<br><br>";
+echo "Step 4 <br>";
+echo "the largest number in the array is: ".largest($numbers);
+
 ?>
 
 </body>

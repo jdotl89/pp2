@@ -9,4 +9,16 @@ function printArr($array) {
         echo "$i <br>";
     }
 }
+
+function largest($array) {
+    $largest = 0;
+    foreach ($array as $i) {
+        if($i > $largest) {
+            $largest = $i;
+        }
+    }
+
+    return $largest;
+}
+
 ?>
